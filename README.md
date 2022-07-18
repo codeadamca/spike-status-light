@@ -1,4 +1,4 @@
-# LEGO Mindstorms Spike Hub and the Motors
+# LEGO Mindstorms Spike Hub and the Hub Status Light
 
 A Python snippet utilizing the LEGO Spike status light, [MicroPython](https://lego.github.io/MINDSTORMS-Robot-Inventor-hub-API/), and the ```on()``` and ```off()``` commands.
 
