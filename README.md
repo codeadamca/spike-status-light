@@ -2,6 +2,41 @@
 
 A Python snippet utilizing the LEGO Spike status light, [MicroPython](https://lego.github.io/MINDSTORMS-Robot-Inventor-hub-API/), and the `on()` and `off()` commands.
 
+## Sample Code
+
+```py
+from mindstorms import MSHub
+from mindstorms.control import wait_for_seconds
+
+hub = MSHub()
+
+colors = [
+    'azure',
+    'black',
+    'blue',
+    'cyan',
+    'green',
+    'orange',
+    'pink',
+    'red',
+    'violet',
+    'white',
+    'yellow'
+]
+
+for color in colors:
+
+    print(color)
+
+    hub.status_light.on(color)
+
+    wait_for_seconds(1)
+
+hub.status_light.off()
+
+hub.speaker.beep()
+```
+
 ***
 
 ## Repo Resources
